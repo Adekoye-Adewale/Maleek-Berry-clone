@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(58, 58, 58);
+}
+
+body {
+    padding: 15px;
+    font-family: 'Velasans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    height: 500px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.top-left {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+    /*padding-left: 20px;*/
+}
+
+/*.top-center {
+   display: block;
+   margin: auto;
+   width: 50%;
+}*/
+
+.top-center img {
+    display: block;
+    margin: auto;
+    padding: 05px;
+    width: 19%; 
+    box-shadow: none;
+}
+
+.top-right a {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(252, 252, 252);
+    text-decoration-line: none;
+    cursor: pointer;
+    text-align-last: right;
+    display: block;
+    float: none;
+}
+
+
+/*.top-right a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(253, 13, 13);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.top-right a:active::before {
+    background-color: rgb(132, 0, 255);
+}
+
+.top-right a:focus::before,
+.top-right a:hover::before    {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+*/
+
+
+img {
+    width: 30%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.2), 0px 10px 50px 10px rgba(255, 0, 0, 0.19);
+}
+
+
+.bottom {
+     /* background-color: indianred;*/
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+.bottom-center {
+    display: display;
+    text-align-last: center;
+    margin: 0px auto;
+    width: 200px;
+    color: #000;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.play {
+display: flex;
+}
+
+.play img {
+    /*display: flex;*/
+    /*width: 24px;*/
+    height: 24px;
+    margin-right: 5px;
+    box-shadow: none;
+}
+
+/*.konnect {
+    margin-left: -100px; 
+}*/
+
+.bottom-left {
+    display: block;
+    align-self: flex-end;
+}
+
+.bottom-right {
+    line-height: 50px;
+    display: block;
+    align-self: end;
+    
+}
+
+.menu-icon {
+    display: block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+
+
+
+  .bottom-center h3:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
