@@ -84,6 +84,14 @@ img {
     box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.2), 0px 10px 50px 10px rgba(255, 0, 0, 0.19);
 }
 
+img:hover .lay {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.795);
+    transition: .5s ease;
+    height: 100%;
+}
+
 
 .bottom {
      /* background-color: indianred;*/
@@ -97,7 +105,7 @@ img {
     line-height: 5px;
     text-align-last: center;
     margin: 0px auto;
-    width: 200px;
+    width: 240px;
     color: #000;
     z-index: 2;
     background-color: #fff;
@@ -117,6 +125,7 @@ img {
 
 .text-top {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .text-down {
@@ -163,7 +172,7 @@ display: flex;
     align-self: end;
     
 }
-
+/*
 .menu-icon {
     display: block;
     background-color: rgb(0, 0, 0);
@@ -173,7 +182,7 @@ display: flex;
     margin: 0px auto;
     text-align: center;
 }
-
+*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -196,14 +205,42 @@ display: flex;
   }
   
 .closebtn {
+    display: block;
+    text-align: center;
+    background-color: blue;
     font-size: 16px;
+    padding: 22px;
+    border-radius: 100%;
+    color: aqua;
+    text-decoration: none;
     
   }
 
 .menu-out-icon {
-    background-color: rgb(185, 185, 185);
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin: 0px auto;
+}
+
+.toggle {
+    display: block;
+    text-align: center;
+    background-color: rgb(109, 109, 109);
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    width: 20px;
+    margin: 0px auto;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    -ms-transition: -ms-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;  
+}
+
+.toggle:hover {
+    transform:rotate(120deg);
+    -ms-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
 }
