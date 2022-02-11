@@ -61,27 +61,31 @@
             <p>MUSIC</p>
         </div>
 
-    <div id="myNav" class="overlay">
+    <div id="myOv" class="overlay">
 
-        <div class=bottom-center>
+        <div id="myNav" class=bottom-center>
+           
+            <div class="text-top">
+                <p class="hd">SOCIALS</h3>    
+                    <p>TWITTER</p>
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                    <p>YOUTUBE</p>
+            </div>    
             
-            <h3>SOCIALS</h3>    
-                <p>TWITTER</p>
-                <p>INSTAGRAM</p>
-                <p>FACEBOOK</p>
-                <p>YOUTUBE</p>
-                
-                
-            <h3>LISTEN</h3>
-                <p>APPLE MUSIC</p>
-                <p>TIDAL</p>
-                <P>GOOGLE PLAY</P>
-                <P>SPOTIFY</P>
-                
-                <h5>2022 Berry's Room.</h5>
-                <h6>Clone by Adisa</h6>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="text-down">
+                <p class="hd">LISTEN</h3>
+                    <p>APPLE MUSIC</p>
+                    <p>TIDAL</p>
+                    <P>GOOGLE PLAY</P>
+                    <P>SPOTIFY</P>
+            </div>    
 
+                <p>2022 Berry's Room.</p>
+                <h4>Clone by Adisa</h4>
+                <div class="menu-out-icon">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
         </div>
 
     </div>
@@ -91,8 +95,8 @@
         </div>
     </div>
 
-    <div class="menu-icon">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="arrow" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="menu-icon">
+        <span style="font-size:30px;cursor:pointer;margin: 0px auto;" onclick="openNav()">&#60;</span>
     </div>
 
 
@@ -101,10 +105,20 @@
 
 <script>
     function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+  document.getElementById("myNav").style.height = "60%";
 }
 
     function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("myNav").style.height = "1%";
 }
+
+    function bigImg(x) {
+  document.getElementById("arrow").style.transform = "rotate(180deg)";
+}
+
+    function normalImg(x) {
+  document.getElementById("arrow").style.transform = "rotate(90deg)";
+}
+
+
     </script>

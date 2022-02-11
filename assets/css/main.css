@@ -21,6 +21,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 14px;
     cursor: pointer;
+    
     /*padding-left: 20px;*/
 }
 
@@ -89,19 +90,52 @@ img {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    
 }
 
 .bottom-center {
-    display: display;
+    font-size: 12px;
+    line-height: 5px;
     text-align-last: center;
     margin: 0px auto;
     width: 200px;
     color: #000;
+    z-index: 2;
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    /*padding: 45px 20px;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+    max-height: 100vh;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
+
+.text-top {
+    margin-bottom: 50px;
+}
+
+.text-down {
+    margin-bottom: 50px;
+}
+
+.hd {
+    font-size: 12px;
+    color: rgb(185, 185, 185);
+}
+
+.bottom-center p {
+    font-size: 12px;
+}
+
+.bottom-center h4 {
+    font-size: 11px;
+}
+
 .play {
 display: flex;
 }
@@ -132,7 +166,7 @@ display: flex;
 
 .menu-icon {
     display: block;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -150,13 +184,26 @@ display: flex;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
-    transition: 0.5s;
+    transition: 0s;
+    overflow: auto;
   }
 
 
 
 
-  .bottom-center h3:hover, .overlay a:focus {
-    color: #f1f1f1;
+.bottom-center p:hover, .overlay a:focus {
+    color: rgb(185, 185, 185);
   }
   
+.closebtn {
+    font-size: 16px;
+    
+  }
+
+.menu-out-icon {
+    background-color: rgb(185, 185, 185);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0px auto;
+}
